@@ -4,7 +4,9 @@ using namespace std;
 
 int main(){
     int* pArray = NULL;
+
     pArray = new int[10];
+
     if (pArray  == NULL)
     {
         cout << "Error:\n";
@@ -14,10 +16,12 @@ int main(){
         pArray[i] = 100+i;
     }
     cout<< "Display the results" << endl;
-    for(int i = 1; i < 10; i++,pArray++)
+    for(int i = 1; i < 11; i++,pArray++)
     {
         cout << *pArray << endl;
     }
+
     delete[] pArray;
+    
     return 0;
 }
